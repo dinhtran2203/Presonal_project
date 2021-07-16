@@ -22,12 +22,12 @@ def hang_man():
 	alphabet = set(string.ascii_uppercase)
 
 	used_letters = set()
-
-	while len(hidden_word) > 0:
+	lives = 5
+	while len(hidden_word) > 0 and lives > 0:
 
 		print()
 		# letter used
-		print("You have used: " , " ".join(used_letters))
+		print("You have " ,lives, " life left and You have used: " , " ".join(used_letters))
 
 		# what current word is (ie w-s-d)
 		currentword = [letter if letter in used_letters else '-' for letter in word]
@@ -38,13 +38,17 @@ def hang_man():
 			used_letters.add(userinput)
 			if userinput in hidden_word:
 				hidden_word.remove(userinput)
+			lives-=1
 		elif userinput in used_letters:
 			print("you have used that character. Please try again")
 		else:
 			print("Invalid character. Please try again")
+	if lives > 0:
+		print("---------------------------------")
+		print("Congratulation you found the word")
+		print("The word is: ", word)
 	print("---------------------------------")
-	print("Congratulation you found the word")
-	print("The word is: ", word)
+	print("You lose the game. The word is: " , word)
 hang_man()
 
 
