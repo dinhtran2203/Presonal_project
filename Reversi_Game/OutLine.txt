@@ -1,0 +1,34 @@
+Game should have these functions:
+
+draw broad function
+// this will draw out the broad for visualize
+
+reset broad -> none
+
+get new broad -> new board
+
+check valid move -> boolean
+
+is on broad -> boolean
+
+get broad with valid move
+
+get score
+
+player tile
+
+check go first
+
+check play again
+
+make move
+
+get copy broad
+
+ check corner
+
+get player move
+get computer move
+
+show point
+
