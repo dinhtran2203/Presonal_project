@@ -5,7 +5,7 @@
 import yfinance as yf
 import matplotlib
 
-msft = yf.Ticker('MSFT')
+msft = yf.Ticker("MSFT")
 
-print(msft.recommendations)
-print(msft.tickers.AAPL.history(period='1mo'))
+msft.actions
+

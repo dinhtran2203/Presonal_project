@@ -1,0 +1,15 @@
+// start new project
+django-admin startproject *name*
+
+// run server
+python manage.py runserver
+
+// create superuser
+python manage.py createsuperuser
+
+// create app
+python manage.py startapp *name app*
+
+// migrate database
+python manage.py makemigrations
+python manage.py migrate
