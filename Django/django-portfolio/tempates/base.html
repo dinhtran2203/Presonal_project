@@ -1,16 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
-    <title>Title of HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/efdc94f817.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     {% include 'nav.html' %}
 
-
-
     {% block content %}
 
     {% endblock content %}
+    
 </body>
 </html>
